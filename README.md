@@ -24,3 +24,13 @@ To identify the key performance metrics that most clearly distinguish the cluste
 To achieve this, we will compute the cluster-wise minimum and maximum range for each variable. If there is no overlap between clusters for a given feature, it strongly indicates its role in differentiating player groups.
 
 Additionally, we will summarize each variable for each cluster by calculating key statistics, including mean, standard deviation, median, minimum, and maximum. This analysis will help us determine the features that have the strongest influence on cluster separation.
+
+After analysis, we identified three key metrics that have the strongest influence in distinguishing clusters:
+
+1.points_per_game
+2.pra_per_game (points + rebounds + assists per game)
+3.minutes_played_per_game
+
+Conclusion
+
+In this project, we applied K-means and hierarchical clustering to group NBA players based on their performance metrics. The elbow method and dendrogram confirmed that the optimal number of clusters is two. We then analyzed cluster-wise statistics to determine the most influential features, identifying points per game, PRA per game, and minutes played per game as the key differentiators. This clustering analysis provides valuable insights into player categorization, aiding in scouting, strategy, and performance evaluation.
