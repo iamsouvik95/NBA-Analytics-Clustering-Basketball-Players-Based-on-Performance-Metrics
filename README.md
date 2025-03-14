@@ -18,3 +18,9 @@ Using K-means clustering and the elbow method, the plot clearly indicates that t
 Now, we will apply hierarchical clustering, which has produced the following dendrogram. By analyzing the structure of the dendrogram, it is evident that the dataset naturally groups into two distinct clusters, reinforcing the findings from the K-means clustering and elbow method. This further validates the optimal number of clusters in our analysis.
 
 ![image](https://github.com/user-attachments/assets/e3e8ee0e-e6e1-4cdc-8845-cfa3544947b9)
+
+To identify the key performance metrics that most clearly distinguish the clusters, we will analyze the six numeric columns and assign the most influential ones to the strongest_influence object as a vector of strings.
+
+To achieve this, we will compute the cluster-wise minimum and maximum range for each variable. If there is no overlap between clusters for a given feature, it strongly indicates its role in differentiating player groups.
+
+Additionally, we will summarize each variable for each cluster by calculating key statistics, including mean, standard deviation, median, minimum, and maximum. This analysis will help us determine the features that have the strongest influence on cluster separation.
